@@ -35,8 +35,8 @@ Optional extensions on the jquery.inputmask base
             cardinality: 4,
             prevalidator: [
                         { validator: "[12]", cardinality: 1 },
-                        { validator: "(19|20)", cardinality: 2 },
-                        { validator: "(19|20)\\d", cardinality: 3 }
+                        { validator: "(19|20|21)", cardinality: 2 },
+                        { validator: "(19|20|21)\\d", cardinality: 3 }
                         ]
         }
     });
@@ -52,7 +52,7 @@ Optional extensions on the jquery.inputmask base
             },
             leapday: "29/02/",
             separator: '/',
-            yearrange: { minyear: 1900, maxyear: 2099 },
+            yearrange: { minyear: 1900, maxyear: 2100 },
             isInYearRange: function(chrs, minyear, maxyear){
             	var enteredyear = parseInt(chrs.concat(minyear.toString().slice(chrs.length)));
             	var enteredyear2 = parseInt(chrs.concat(maxyear.toString().slice(chrs.length)));
